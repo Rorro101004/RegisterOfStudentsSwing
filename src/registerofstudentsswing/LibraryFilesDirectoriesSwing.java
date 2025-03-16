@@ -230,10 +230,10 @@ public class LibraryFilesDirectoriesSwing {
         //String estudianteBorrado = findStudent(registerOfStudents);
         if (estudianteBorrado != null) {
             System.out.println("El estudiante con DNI: " + estudianteBorrado + " será borrado");
-            registerOfStudents.remove(estudianteBorrado);
             for (int i = 0; i < students.size(); i++) {
                 StudentS estudianteAborrar = students.get(i);
                 if (estudianteAborrar.toString().equals(estudianteBorrado)) {
+                    registerOfStudents.remove(estudianteBorrado);
                     students.remove(i);
                     break;
                 }
